@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ДРНК: возможности и профессиональное будущее</title>
+<style>
+:root{
+  --bg:#13283f; --slide:#1a3350; --card:#24425f; --gold:#c9a15a;
+  --text:#ffffff; --muted:#c8d3df; --line:#3b5874; --link:#e3c27f;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"DejaVu Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.45}
+a{color:var(--link);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:#fff}
+.slide{max-width:1100px;margin:28px auto;padding:44px 48px 22px;background:var(--slide);
+  border-radius:14px;display:flex;flex-direction:column;min-height:560px}
+.kicker{color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  display:flex;align-items:center;gap:14px;margin:0 0 18px}
+.kicker::before{content:"";width:34px;height:3px;background:var(--gold);display:inline-block}
+h1{font-size:clamp(1.9rem,4.4vw,3rem);margin:40px 0 24px;line-height:1.25}
+h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 10px;line-height:1.25}
+.lead{color:var(--muted);font-size:1.05rem;margin:0 0 26px}
+.sub{font-size:1.3rem;color:var(--muted);margin:0 0 28px}
+.card{background:var(--card);border-radius:12px;padding:20px 22px}
+.card h3{margin:0 0 10px;font-size:1.12rem;color:#fff}
+.card .label{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+.card p{margin:0 0 8px}
+.card ul{margin:0;padding-left:1.1em}
+.card li{margin:0 0 8px}
+.big{font-size:1.2rem}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.note{margin-top:20px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(201,161,90,.08);border-radius:0 8px 8px 0}
+.small{font-size:.85rem;color:var(--muted);margin-top:22px}
+.src{margin-top:16px;font-size:.92rem}
+.table-wrap{overflow-x:auto;margin-top:6px}
+table{width:100%;border-collapse:collapse;min-width:680px;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{color:var(--gold);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+.steps{counter-reset:none}
+.step .num{color:var(--gold);font-weight:700;font-size:1.4rem;margin-bottom:6px}
+.refs{list-style:none;padding:0;margin:0}
+.refs li{padding:12px 0;border-bottom:1px solid var(--line)}
+.refs .meta{display:block;color:var(--muted);font-size:.88rem;margin-top:3px}
+footer.sf{margin-top:auto;padding-top:26px;display:flex;justify-content:space-between;gap:12px;
+  font-size:.72rem;color:var(--muted);border-top:1px solid var(--line);margin-top:30px}
+footer.sf .n{color:var(--gold);font-weight:700}
+@media (max-width:640px){.slide{margin:14px 10px;padding:28px 20px 16px;min-height:0}h1{margin-top:20px}}
+</style>
+</head>
+<body>
+
+<!-- 01 -->
+<section class="slide" id="s1">
+  <p class="kicker">Профессиональные перспективы</p>
+  <h1>ДРНК: возможности<br>и профессиональное будущее</h1>
+  <p class="sub">Коучинг • интеграция • обучение взрослых</p>
+  <div class="card">
+    <p class="label">Германия / 5 проверенных примеров</p>
+    <p class="big">Куда двигаться после обучения: собственная практика, сотрудничество с организациями и работа с группами.</p>
+  </div>
+  <p class="small">Материал для презентации программы. Вакансии и условия проверены по доступным объявлениям; ссылки кликабельны.</p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">01</span></footer>
+</section>
+
+<!-- 02 -->
+<section class="slide" id="s2">
+  <p class="kicker">01 / Карта возможностей</p>
+  <h2>Три формата профессиональной работы</h2>
+  <p class="lead">Вакансии показывают разные способы сотрудничества с образовательными организациями.</p>
+  <div class="grid g3">
+    <div class="card"><h3>По найму</h3><p>Штатная работа с участниками программ.</p><p>Примеры: gsm, Bildungszentrum Bauer, trigon. <a href="#s14">[3–5]</a></p></div>
+    <div class="card"><h3>На гонорарной основе</h3><p>Сотрудничество как Honorarkraft.</p><p>Примеры: MindCept; Corsu также указывает Honorarbasis. <a href="#s14">[1–2]</a></p></div>
+    <div class="card"><h3>Самостоятельно</h3><p>Собственные консультации, группы и воркшопы.</p><p>Выберите аудиторию, тему и формат, в которых хотите развиваться.</p></div>
+  </div>
+  <p class="note">Можно выбрать один формат или постепенно сочетать собственную практику, работу в организации и проведение групп.</p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">02</span></footer>
+</section>
+
+<!-- 03 -->
+<section class="slide" id="s3">
+  <p class="kicker">02 / Hamburg</p>
+  <h2>Corsu: Jobcoach с русским / украинским</h2>
+  <p class="lead">Объявление доступно в Jobsuche BA; работодатель сообщает, что постоянно ищет коучей. <a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003563212-S" target="_blank" rel="noopener">[1]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>Что предстоит делать</h3><ul>
+      <li>Оценивать исходную ситуацию клиента (Standortanalyse).</li>
+      <li>Готовить Bewerbung, искать работу, обучение и практику; тренировать собеседования.</li>
+      <li>Поддерживать мотивацию, развивать Soft Skills, вести отчётность.</li></ul></div>
+    <div class="card"><h3>Что требуется</h3><ul>
+      <li>Завершённая Ausbildung или Studium в релевантной сфере.</li>
+      <li>Педагогическая квалификация и/или коучинговая подготовка либо AEVO.</li>
+      <li>Опыт Jobcoaching / трудоустройства обязателен.</li>
+      <li>Немецкий C2; языки целевой группы C1.</li></ul></div>
+  </div>
+  <p class="note">Возможность: индивидуальный коучинг с русско- и украиноязычными клиентами. Первоначально Minijob или гонорар; преимущественно очно.</p>
+  <p class="src"><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003563212-S" target="_blank" rel="noopener">Источник [1]: вакансия Corsu, BA ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">03</span></footer>
+</section>
+
+<!-- 04 -->
+<section class="slide" id="s4">
+  <p class="kicker">03 / Berlin</p>
+  <h2>MindCept: Coach / Jobcoach</h2>
+  <p class="lead">Honorarbasis • индивидуальная очная работа в Berlin-Charlottenburg. <a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003753111-S" target="_blank" rel="noopener">[2]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>Задачи</h3><ul>
+      <li>Карьерное и трудовое консультирование.</li>
+      <li>Сопровождение людей с несколькими препятствиями к трудоустройству; ориентация, Bewerbung, организация повседневной жизни.</li>
+      <li>Помощь в социальных и организационных вопросах; документация.</li></ul></div>
+    <div class="card"><h3>Квалификация и язык</h3><ul>
+      <li>Ausbildung или Studium: социальная работа, педагогика, психология либо сопоставимая подготовка.</li>
+      <li>Опыт коучинга, консультирования или помощи людям в сложных обстоятельствах.</li>
+      <li>Немецкий на уровне носителя.</li>
+      <li>Русский / украинский — преимущество.</li></ul></div>
+  </div>
+  <p class="note">Возможность: развивать карьерное консультирование и помогать людям обрести профессиональное направление. Гонорар по договорённости.</p>
+  <p class="src"><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003753111-S" target="_blank" rel="noopener">Источник [2]: вакансия MindCept / Dietrich und Körner Consulting GbR, BA ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">04</span></footer>
+</section>
+
+<!-- 05 -->
+<section class="slide" id="s5">
+  <p class="kicker">04 / Starnberg</p>
+  <h2>gsm: профессиональная интеграция мигрантов</h2>
+  <p class="lead">Проект «Chancen. Sprache. Arbeit.» • начало 26.10.2026 • 25–35 часов в неделю. <a href="https://mein-gsm.de/karriere/stellenangebot/sozialpaedagoge-jobcoach-mwd-fuer-arbeitsmarktprojekt-7u0h37ua" target="_blank" rel="noopener">[3]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>Работа с участниками</h3><ul>
+      <li>Индивидуальные и групповые встречи; помощь в поиске жизненных и профессиональных перспектив.</li>
+      <li>Развитие самостоятельности и способности действовать.</li>
+      <li>Сотрудничество с работодателями, социальными службами и Jobcenter; отчётность.</li></ul></div>
+    <div class="card"><h3>Требования</h3><ul>
+      <li>Признанное профессиональное или высшее образование.</li>
+      <li>Многолетний релевантный опыт в обучении взрослых и индивидуальном коучинге либо сопровождении и трудоустройстве мигрантов.</li>
+      <li>Межкультурная компетентность.</li>
+      <li>Подготовка в коучинге / психологии и языки целевой группы желательны.</li></ul></div>
+  </div>
+  <p class="note">Ваш миграционный опыт может стать ресурсом для понимания участников, а русский и украинский языки — преимуществом в работе с ними.</p>
+  <p class="src"><a href="https://mein-gsm.de/karriere/stellenangebot/sozialpaedagoge-jobcoach-mwd-fuer-arbeitsmarktprojekt-7u0h37ua" target="_blank" rel="noopener">Источник [3]: сайт gsm — актуальная вакансия ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">05</span></footer>
+</section>
+
+<!-- 06 -->
+<section class="slide" id="s6">
+  <p class="kicker">05 / Обучение взрослых</p>
+  <h2>Bildungszentrum Bauer: Dozent / Gruppencoach</h2>
+  <p class="lead">Объявление BA: Frankfurt / Rüsselsheim; в списке мест работы также Büdingen. <a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003533399-S" target="_blank" rel="noopener">[4]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>Содержание работы</h3><ul>
+      <li>Коммуникация и управление конфликтами.</li>
+      <li>Мотивация, личные сильные и слабые стороны, развитие команды.</li>
+      <li>Подготовка к собеседованиям и Assessment Center; профессиональные альтернативы.</li>
+      <li>Все темы охватывать необязательно.</li></ul></div>
+    <div class="card"><h3>Условия входа</h3><ul>
+      <li>Завершённая Berufsausbildung или Studium.</li>
+      <li>Педагогическая пригодность: в профиле указан Ausbildereignungsschein.</li>
+      <li>Опыт преподавания желателен, но не обязателен.</li>
+      <li>Иностранные языки — преимущество.</li>
+      <li>Quereinstieg допускается.</li></ul></div>
+  </div>
+  <p class="note">Это вакансия для штатных преподавателей / групповых коучей. Отдельно сайт Bauer принимает инициативные заявки и на гонорарное сотрудничество. <a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003533399-S" target="_blank" rel="noopener">[4</a>, <a href="https://www.bzbauer.de/kontakt/_misc/stellenangebote.html" target="_blank" rel="noopener">7]</a></p>
+  <p class="src"><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003533399-S" target="_blank" rel="noopener">Источник [4]: вакансия Bauer, BA</a>; <a href="https://www.bzbauer.de/media/bzb_flyer_doz_gruppencoach_erw-bildung_08_2026_v1.pdf" target="_blank" rel="noopener">официальный профиль в источнике [6] ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">06</span></footer>
+</section>
+
+<!-- 07 -->
+<section class="slide" id="s7">
+  <p class="kicker">06 / Neuwied</p>
+  <h2>trigon: Dozentin в обучении взрослых</h2>
+  <p class="lead">Женский проект • Vollzeit • объявленный старт 01.10.2026; карточка доступна при проверке. <a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003715920-S" target="_blank" rel="noopener">[5]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>Задачи</h3><ul>
+      <li>Индивидуальный и групповой коучинг.</li>
+      <li>Профессиональная ориентация и интеграция в работу / обучение; стабилизация жизненной ситуации.</li>
+      <li>Кризисное сопровождение, управление конфликтами, развитие социальных компетенций.</li>
+      <li>Практические проекты и воркшопы.</li></ul></div>
+    <div class="card"><h3>Что требуется</h3><ul>
+      <li>Завершённая Ausbildung или Studium и релевантный профессиональный опыт.</li>
+      <li>Опыт коучинга и консультационных бесед.</li>
+      <li>Уверенная документация и MS Office.</li>
+      <li>Опыт с людьми с множественными трудностями желателен; знания SGB II / III — преимущество.</li></ul></div>
+  </div>
+  <p class="note">Возможность: применять навыки консультирования и групповой работы в социально значимом проекте для женщин.</p>
+  <p class="src"><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003715920-S" target="_blank" rel="noopener">Источник [5]: вакансия trigon-Beratungsg. GmbH, BA ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">07</span></footer>
+</section>
+
+<!-- 08 -->
+<section class="slide" id="s8">
+  <p class="kicker">07 / Ориентиры развития</p>
+  <h2>Как подготовиться к выбранной вакансии</h2>
+  <p class="lead">Используйте требования как карту: что у вас уже есть и что стоит добавить для следующего шага. <a href="#s14">[1–6]</a></p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Работодатель</th><th>Образование / подготовка</th><th>Опыт</th><th>Язык</th></tr></thead>
+    <tbody>
+      <tr><td>Corsu</td><td>Ausbildung / Studium + педагогика / coaching / AEVO</td><td>Jobcoaching / Vermittlung обязательно</td><td>Немецкий C2; целевой язык C1</td></tr>
+      <tr><td>MindCept</td><td>Социальная сфера / психология / педагогика или сопоставимо</td><td>Coaching / консультирование / сложные жизненные ситуации</td><td>Немецкий как у носителя; RU / UA — плюс</td></tr>
+      <tr><td>gsm</td><td>Признанный Berufs- или Studienabschluss</td><td>Многолетний релевантный опыт</td><td>RU / UA / AR желательны</td></tr>
+      <tr><td>Bauer</td><td>Ausbildung / Studium; Ausbildereignungsschein</td><td>Преподавание желательно, не обязательно</td><td>Иностранные языки как преимущество</td></tr>
+      <tr><td>trigon</td><td>Ausbildung / Studium</td><td>Релевантный опыт; коучинг / консультации</td><td>Уровень в тексте не указан</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">RU — русский; UA — украинский; AR — арабский. Подбирайте вакансии под свой опыт, образование, язык и желаемый формат работы.</p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">08</span></footer>
+</section>
+
+<!-- 09 -->
+<section class="slide" id="s9">
+  <p class="kicker">08 / 11-й модуль</p>
+  <h2>От индивидуальной работы — к группам</h2>
+  <p class="lead">Коммуникация, конфликтология, групповая динамика и тренинги пересекаются с задачами реальных вакансий.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Компетенция модуля</th><th>Применение в работе</th><th>Пример</th></tr></thead>
+    <tbody>
+      <tr><td>Социальная психология; групповая динамика</td><td>Командное развитие и групповой коучинг</td><td>Bauer / gsm</td></tr>
+      <tr><td>Конфликтология</td><td>Обучение управлению конфликтами; сопровождение</td><td>Bauer / trigon</td></tr>
+      <tr><td>Управление группой; проведение тренингов</td><td>Ведение воркшопов и практических занятий</td><td>Bauer / trigon</td></tr>
+      <tr><td>Работа с сопротивлением; мотивация</td><td>Поддержка вовлечённости участников</td><td>Аналитическое сопоставление</td></tr>
+      <tr><td>Обратная связь; оценка эффективности</td><td>Обсуждение прогресса и документирование</td><td>Аналитическое сопоставление</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Bauer прямо перечисляет коммуникацию, конфликты, мотивацию и командное развитие. trigon — групповой коучинг, социальные компетенции и воркшопы. <a href="#s14">[4–6]</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">09</span></footer>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="s10">
+  <p class="kicker">09 / Образовательные организации</p>
+  <h2>Как устроен канал через Bildungsträger</h2>
+  <p class="lead">Bauer прямо подтверждает работу по поручению Agentur für Arbeit и Jobcenter. <a href="https://www.bzbauer.de/integration-vermittlung.html" target="_blank" rel="noopener">[8]</a></p>
+  <div class="grid g2">
+    <div class="card"><h3>AVGS</h3><p>Gutschein для мер активации и профессиональной интеграции: в том числе коучинг и помощь с трудоустройством.</p><p>Формат и финансирование определяются конкретной программой. <a href="https://www.arbeitsagentur.de/aktivierungs-vermittlungsgutschein-avgs" target="_blank" rel="noopener">[9]</a></p></div>
+    <div class="card"><h3>Bildungsgutschein</h3><p>Финансирование профессионального Weiterbildung: повышение квалификации, переобучение и другие подходящие программы.</p><p>Это отдельный инструмент, со своими условиями. <a href="https://www.arbeitsagentur.de/karriere-und-weiterbildung/bildungsgutschein" target="_blank" rel="noopener">[10]</a></p></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Работа с организацией</h3><p>Образовательные организации — канал для работы с участниками уже действующих программ. Можно искать вакансии, предлагать свои темы и знакомиться с командами центров.</p></div>
+  <p class="src"><a href="https://www.bzbauer.de/integration-vermittlung.html" target="_blank" rel="noopener">Источники [8–11]: Bauer и Bundesagentur für Arbeit; список ссылок в конце ↗</a></p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">10</span></footer>
+</section>
+
+<!-- 11 -->
+<section class="slide" id="s11">
+  <p class="kicker">10 / Самостоятельная практика</p>
+  <h2>ДРНК и ДРНК + 11-й модуль</h2>
+  <p class="lead">Выберите направление и развивайте практику вокруг конкретных запросов вашей аудитории.</p>
+  <div class="grid g2">
+    <div class="card"><h3>Индивидуальная работа</h3><ul>
+      <li>Коуч и самостоятельный консультант.</li>
+      <li>Карьерная ориентация и сопровождение профессиональных изменений — после освоения специфики рынка труда.</li>
+      <li>Бизнес-коучинг и сопровождение начинающих предпринимателей — при соответствующей подготовке.</li></ul></div>
+    <div class="card"><h3>Добавляется групповая работа</h3><ul>
+      <li>Групповой коуч, тренер, ведущий семинаров, практических занятий и воркшопов.</li>
+      <li>Модератор групп, ко-тренер, ведущий групповых программ.</li>
+      <li>Тренинги коммуникации и подготовки к собеседованиям — при предметной компетентности.</li></ul></div>
+  </div>
+  <p class="note">Индивидуально • онлайн • в группах • в собственных программах • в сотрудничестве с образовательными организациями.</p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">11</span></footer>
+</section>
+
+<!-- 12 -->
+<section class="slide" id="s12">
+  <p class="kicker">11 / Профессиональная самопрезентация</p>
+  <h2>Покажите работодателю, что вы умеете</h2>
+  <p class="lead">Переведите подготовку и практический опыт на язык задач выбранной организации.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Подготовка</h3><ul>
+      <li>Представьте сертификат ДРНК вместе с программой, объёмом обучения и практикой.</li>
+      <li>Добавьте документы о базовом образовании и других квалификациях.</li></ul></div>
+    <div class="card"><h3>Практика</h3><ul>
+      <li>Подготовьте примеры консультаций и занятий без персональных данных клиентов.</li>
+      <li>Покажите методы работы и подтверждённые результаты.</li></ul></div>
+    <div class="card"><h3>Ваш вклад</h3><ul>
+      <li>Покажите, как помогаете формулировать цели, находить ресурсы и переходить к действиям.</li>
+      <li>Отметьте языки и опыт работы с выбранной аудиторией.</li></ul></div>
+  </div>
+  <div class="note"><strong>Из обучения — в профессиональный профиль</strong><br>Соберите знания, практику и жизненный опыт в понятное предложение: кому вы помогаете, с какими запросами работаете и какую задачу организации можете решить.</div>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">12</span></footer>
+</section>
+
+<!-- 13 -->
+<section class="slide" id="s13">
+  <p class="kicker">12 / Ваш следующий шаг</p>
+  <h2>Профессиональное будущее начинается с действий</h2>
+  <p class="lead">Выберите посильный шаг, который поможет превратить обучение в практику.</p>
+  <div class="grid g2 steps">
+    <div class="card step"><div class="num">01</div><h3>Выбрать направление</h3><p>Индивидуальный коучинг, профессиональная интеграция, работа с группами или собственная практика.</p></div>
+    <div class="card step"><div class="num">02</div><h3>Собрать портфолио</h3><p>Сертификат, программа обучения, описание опыта, примеры консультаций и проведённых занятий.</p></div>
+    <div class="card step"><div class="num">03</div><h3>Составить маршрут развития</h3><p>Определить, что добавить для выбранной роли: немецкий, знания рынка труда, документацию или практику.</p></div>
+    <div class="card step"><div class="num">04</div><h3>Выйти на контакт</h3><p>Откликнуться на подходящие вакансии или предложить образовательному центру тему и формат сотрудничества.</p></div>
+  </div>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">13</span></footer>
+</section>
+
+<!-- 14 -->
+<section class="slide" id="s14">
+  <p class="kicker">13 / Проверенные источники</p>
+  <h2>Вакансии: прямые ссылки</h2>
+  <p class="lead">Проверено 07.10.2026. Перед откликом посмотрите актуальную версию объявления.</p>
+  <ul class="refs">
+    <li><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003563212-S" target="_blank" rel="noopener">[1] Corsu — Hamburg ↗</a><span class="meta">BA • 10001-1003563212-S</span></li>
+    <li><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003753111-S" target="_blank" rel="noopener">[2] MindCept — Berlin ↗</a><span class="meta">BA • 10001-1003753111-S</span></li>
+    <li><a href="https://mein-gsm.de/karriere/stellenangebot/sozialpaedagoge-jobcoach-mwd-fuer-arbeitsmarktprojekt-7u0h37ua" target="_blank" rel="noopener">[3] gsm — Starnberg ↗</a><span class="meta">Официальный сайт • старт 26.10.2026; 25–35 ч/нед.</span></li>
+    <li><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003533399-S" target="_blank" rel="noopener">[4] Bildungszentrum Bauer — Dozent / Gruppencoach ↗</a><span class="meta">BA • 10001-1003533399-S</span></li>
+    <li><a href="https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003715920-S" target="_blank" rel="noopener">[5] trigon — Neuwied ↗</a><span class="meta">BA • 10001-1003715920-S</span></li>
+  </ul>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">14</span></footer>
+</section>
+
+<!-- 15 -->
+<section class="slide" id="s15">
+  <p class="kicker">14 / Дополнительные источники</p>
+  <h2>Образование, сотрудничество, финансирование</h2>
+  <p class="lead">Официальные материалы работодателя и Bundesagentur für Arbeit.</p>
+  <ul class="refs">
+    <li><a href="https://www.bzbauer.de/media/bzb_flyer_doz_gruppencoach_erw-bildung_08_2026_v1.pdf" target="_blank" rel="noopener">[6] Bauer: официальный профиль Dozent / Gruppencoach ↗</a><span class="meta">PDF работодателя, версия 08/2026</span></li>
+    <li><a href="https://www.bzbauer.de/kontakt/_misc/stellenangebote.html" target="_blank" rel="noopener">[7] Bauer: список вакансий и инициативные заявки ↗</a><span class="meta">Штатное и гонорарное сотрудничество</span></li>
+    <li><a href="https://www.bzbauer.de/integration-vermittlung.html" target="_blank" rel="noopener">[8] Bauer: Integration &amp; Vermittlung ↗</a><span class="meta">Проекты по поручению Jobcenter / Agentur für Arbeit</span></li>
+    <li><a href="https://www.arbeitsagentur.de/aktivierungs-vermittlungsgutschein-avgs" target="_blank" rel="noopener">[9] Bundesagentur für Arbeit: AVGS ↗</a><span class="meta">Активация и профессиональная интеграция</span></li>
+    <li><a href="https://www.arbeitsagentur.de/karriere-und-weiterbildung/bildungsgutschein" target="_blank" rel="noopener">[10] Bundesagentur für Arbeit: Bildungsgutschein ↗</a><span class="meta">Финансирование профессионального Weiterbildung</span></li>
+    <li><a href="https://www.kursnet-online.arbeitsagentur.de/onlinekurs/hilfeDetail.do?ai=12605" target="_blank" rel="noopener">[11] KURSNET: требуется ли сертификация ↗</a><span class="meta">AZAV-допуск организации и программы для ваучерных мер</span></li>
+  </ul>
+  <p class="small">Связь с ДРНК и 11-м модулем показана по описанию программы. Условия конкретной роли и подходящие подтверждения квалификации можно обсудить с работодателем.</p>
+  <footer class="sf"><span>ДРНК / КАРЬЕРА В ГЕРМАНИИ</span><span>Проверено 07.10.2026</span><span class="n">15</span></footer>
+</section>
+
+</body>
+</html>
